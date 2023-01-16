@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" type="text/css"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="title">Password Generator</h1>
+        <div class="password-gen" id="random-pass">
+            <div class="input-settings" id="group1">
+                <label for="char-setting">Length of Password</label>
+                <br>
+                <input type="number" id="char-setting">
+            </div>
+            <button class="gen-btn" id="random-button">Generate Random Password</button>
+        </div>
+        <div class="password-gen" id="sentence-pass">
+            <div class="input-settings" id="group2">
+                <label for="char-setting">Sentence to Password</label>
+                <br>
+                <input type="text" id="sentence">
+            </div>
+            <label class="checkgroup">
+                <input type="checkbox" id="extra-char?">Extra Characters?
+                <span class="checkmark"></span>
+            </label>
+            <button class="gen-btn" id="sentence-button">Generate Custom Password</button>
+        </div>
+        <div id="results-section">
+            <input type="text" id="password-field" placeholder="Your generated password will appear here" readonly>
+            <button class="copy-btn" id="pass-copy"><span class="material-icons">content_copy</span></button>
+            <br>
+            <span id="copy-msg">Copied to Clipboard</span>
+        </div>
+    </div>
+</body>
+<script src="popup.js"></script>
+</html>
